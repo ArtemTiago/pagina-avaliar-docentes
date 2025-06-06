@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Avaliação de Docente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 900px;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 30px;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 5px 10px;
+    }
+    .pergunta {
+      margin-bottom: 25px;
+    }
+    .pergunta p {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .opcoes label {
+      background: #e9ecef;
+      padding: 6px 12px;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .opcoes input[type="radio"] {
+      display: none;
+    }
+    .opcoes input[type="radio"]:checked + label {
+      background-color: #007bff;
+      color: white;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .btn-enviar {
+      background-color: #28a745;
+      color: white;
+    }
+    .btn-enviar:hover {
+      background-color: #218838;
+    }
+    .btn-voltar {
+      background-color: #6c757d;
+      color: white;
+    }
+    .btn-voltar:hover {
+      background-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <form class="card">
+    <h2>Avaliação de Docente</h2>
+
+    <table>
+      <tr><td><strong>Nome do Professor:</strong></td><td>PROFESSOR FULANO DE TAL</td></tr>
+      <tr><td><strong>Departamento:</strong></td><td>Departamento de Ciências Florestais e da Madeira</td></tr>
+      <tr><td><strong>Disciplina:</strong></td><td>Administração e Economia</td></tr>
+      <tr><td><strong>Turma:</strong></td><td>CC1</td></tr>
+      <tr><td><strong>Período:</strong></td><td>2024/2</td></tr>
+    </table>
+
+    <div class="pergunta">
+      <p>1. Apresentou e discutiu o programa da disciplina (objetivos, estratégias, conteúdos, recursos, material bibliográfico, sistema de avaliação).</p>
+    <hr> 
+      <div class="opcoes">
+        <input type="radio" id="q1i" name="q1" value="Inferior"><label for="q1i">Inferior</label>
+        <input type="radio" id="q1f" name="q1" value="Fraco"><label for="q1f">Fraco</label>
+        <input type="radio" id="q1r" name="q1" value="Regular"><label for="q1r">Regular</label>
+        <input type="radio" id="q1b" name="q1" value="Bom"><label for="q1b">Bom</label>
+        <input type="radio" id="q1s" name="q1" value="Superior"><label for="q1s">Superior</label>
+      </div>
+    <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>2. Utilizou metodologia e recursos de ensino motivadores e condizentes com os objetivos e conteúdos propostos.</p>
+    <hr>
+      <div class="opcoes">
+        <input type="radio" id="q2i" name="q2" value="Inferior"><label for="q2i">Inferior</label>
+        <input type="radio" id="q2f" name="q2" value="Fraco"><label for="q2f">Fraco</label>
+        <input type="radio" id="q2r" name="q2" value="Regular"><label for="q2r">Regular</label>
+        <input type="radio" id="q2b" name="q2" value="Bom"><label for="q2b">Bom</label>
+        <input type="radio" id="q2s" name="q2" value="Superior"><label for="q2s">Superior</label>
+      </div>
+    <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>3. Estabeleceu conexão entre os conteúdos teóricos e as práticas profissionais ou com o contexto social concreto.</p>
+      <hr>
+      <div class="opcoes">
+        <input type="radio" id="q3i" name="q3" value="Inferior"><label for="q3i">Inferior</label>
+        <input type="radio" id="q3f" name="q3" value="Fraco"><label for="q3f">Fraco</label>
+        <input type="radio" id="q3r" name="q3" value="Regular"><label for="q3r">Regular</label>
+        <input type="radio" id="q3b" name="q3" value="Bom"><label for="q3b">Bom</label>
+        <input type="radio" id="q3s" name="q3" value="Superior"><label for="q3s">Superior</label>
+      </div>
+      <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>4. Demonstrou segurança e atualização no conteúdo que leciona.</p>
+      <hr>
+      <div class="opcoes">
+        <input type="radio" id="q4i" name="q4" value="Inferior"><label for="q4i">Inferior</label>
+        <input type="radio" id="q4f" name="q4" value="Fraco"><label for="q4f">Fraco</label>
+        <input type="radio" id="q4r" name="q4" value="Regular"><label for="q4r">Regular</label>
+        <input type="radio" id="q4b" name="q4" value="Bom"><label for="q4b">Bom</label>
+        <input type="radio" id="q4s" name="q4" value="Superior"><label for="q4s">Superior</label>
+      </div>
+      <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>5. Foi pontual, assíduo e cumpriu a carga horária prevista para a disciplina.</p>
+      <hr>
+      <div class="opcoes">
+        <input type="radio" id="q5i" name="q5" value="Inferior"><label for="q5i">Inferior</label>
+        <input type="radio" id="q5f" name="q5" value="Fraco"><label for="q5f">Fraco</label>
+        <input type="radio" id="q5r" name="q5" value="Regular"><label for="q5r">Regular</label>
+        <input type="radio" id="q5b" name="q5" value="Bom"><label for="q5b">Bom</label>
+        <input type="radio" id="q5s" name="q5" value="Superior"><label for="q5s">Superior</label>
+      </div>
+      <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>6. Demonstrou disponibilidade para atendimento individual ao aluno.</p>
+      <hr>
+      <div class="opcoes">
+        <input type="radio" id="q6i" name="q6" value="Inferior"><label for="q6i">Inferior</label>
+        <input type="radio" id="q6f" name="q6" value="Fraco"><label for="q6f">Fraco</label>
+        <input type="radio" id="q6r" name="q6" value="Regular"><label for="q6r">Regular</label>
+        <input type="radio" id="q6b" name="q6" value="Bom"><label for="q6b">Bom</label>
+        <input type="radio" id="q6s" name="q6" value="Superior"><label for="q6s">Superior</label>
+      </div>
+      <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>7. O professor elaborou avaliações compatíveis e coerentes com o conteúdo desenvolvido, discute e analisa os resultados com o aluno.</p>
+      <hr>
+      <div class="opcoes">
+        <input type="radio" id="q7i" name="q7" value="Inferior"><label for="q7i">Inferior</label>
+        <input type="radio" id="q7f" name="q7" value="Fraco"><label for="q7f">Fraco</label>
+        <input type="radio" id="q7r" name="q7" value="Regular"><label for="q7r">Regular</label>
+        <input type="radio" id="q7b" name="q7" value="Bom"><label for="q7b">Bom</label>
+        <input type="radio" id="q7s" name="q7" value="Superior"><label for="q7s">Superior</label>
+      </div>
+      <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>8. Promoveu um ambiente de aprendizagem com predomínio de respeito mútuo e interação.</p>
+      <hr>
+      <div class="opcoes">
+        <input type="radio" id="q8i" name="q8" value="Inferior"><label for="q8i">Inferior</label>
+        <input type="radio" id="q8f" name="q8" value="Fraco"><label for="q8f">Fraco</label>
+        <input type="radio" id="q8r" name="q8" value="Regular"><label for="q8r">Regular</label>
+        <input type="radio" id="q8b" name="q8" value="Bom"><label for="q8b">Bom</label>
+        <input type="radio" id="q8s" name="q8" value="Superior"><label for="q8s">Superior</label>
+      </div>
+      <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>9. Em resumo, em que medida o professor contribuiu para a aquisição de seus conhecimentos na disciplina ministrada.</p>
+      <div class="opcoes">
+        <hr>
+        <input type="radio" id="q9i" name="q9" value="Inferior"><label for="q9i">Inferior</label>
+        <input type="radio" id="q9f" name="q9" value="Fraco"><label for="q9f">Fraco</label>
+        <input type="radio" id="q9r" name="q9" value="Regular"><label for="q9r">Regular</label>
+        <input type="radio" id="q9b" name="q9" value="Bom"><label for="q9b">Bom</label>
+        <input type="radio" id="q9s" name="q9" value="Superior"><label for="q9s">Superior</label>
+      </div>
+      <hr>
+    </div>
+
+    <div class="pergunta">
+      <p>10. O professor promoveu a interdisciplinaridade na abordagem dos conteúdos?</p>
+      <div class="opcoes">
+        <hr>
+        <input type="radio" id="q10i" name="q10" value="Inferior"><label for="q10i">Inferior</label>
+        <input type="radio" id="q10f" name="q10" value="Fraco"><label for="q10f">Fraco</label>
+        <input type="radio" id="q10r" name="q10" value="Regular"><label for="q10r">Regular</label>
+        <input type="radio" id="q10b" name="q10" value="Bom"><label for="q10b">Bom</label>
+        <input type="radio" id="q10s" name="q10" value="Superior"><label for="q10s">Superior</label>
+        <hr>
+      </div>
+    </div>
+
+    <button type="button" class="btn-enviar" onclick="enviarAvaliacao()">Enviar Avaliação</button>
+    <button type="button" class="btn-voltar" onclick="window.history.back()">Voltar</button>
+  </form>
+</body>
+</html>
+
+<script>
+  function enviarAvaliacao() {
+    alert("Avaliação enviada com sucesso!");
+    window.location.href = "pagina2.html"; 
+  }
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Selecionar Matéria</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 15px;
+      background: #e9ecef;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    li:hover {
+      background: #d6d8db;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+      background-color: #6c757d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Selecione uma Matéria</h2>
+    <ul>
+      <li onclick="window.location.href='pagina3.html'">Disciplina 1 - Docente 1</li>
+      <li onclick="window.location.href='pagina3.html'">Disciplina 2 - Docente 2</li>
+      <li onclick="window.location.href='pagina3.html'">Disciplina 3 - Docente 3</li>
+      <li onclick="window.location.href='pagina3.html'">Disciplina 4 - Docente 4</li>
+      <li onclick="window.location.href='pagina3.html'">Disciplina 5 - Docente 5</li>
+    </ul>
+    <button onclick="window.history.back()">Voltar</button>
+  </div>
+</body>
+</html>
